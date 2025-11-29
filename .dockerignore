@@ -1,0 +1,52 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python cache y virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Base de datos local (no copiar al container)
+*.db
+*.sqlite3
+db.sqlite3
+
+# Archivos subidos localmente (se crearán en el container)
+uploads/*
+!uploads/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Documentación y otros
+README.md
+*.md
+.env.example
+
+# Tests
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
